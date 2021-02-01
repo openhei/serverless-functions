@@ -8,7 +8,8 @@ const fetchData = async () => {
 
     result.textContent = data;
   } catch (error) {
-    console.log(error.response.data);
+    // console.log(error.response.data);
+    result.textContent = error.response.data;
   }
 };
 
